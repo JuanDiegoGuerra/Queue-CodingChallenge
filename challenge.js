@@ -8,7 +8,8 @@ class Queue {
   }
   add(number) {
     // your code here
-    
+    this.numbers[this.tail] = number;
+    this.tail++;
   }
   
   remove() {
