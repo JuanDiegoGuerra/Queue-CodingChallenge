@@ -1,7 +1,11 @@
 // Start with your code from LinkedList challenge.
 
 class Queue {
-  
+  constructor() {
+    this.numbers = {};
+    this.head = 0;
+    this.tail = 0;
+  }
   add(number) {
     // your code here
     
