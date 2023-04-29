@@ -14,7 +14,13 @@ class Queue {
   
   remove() {
     // your code here
-    
+    if (this.tail - this.head !== 0) {
+    const item = this.numbers[this.head];
+    delete this.numbers[this.head];
+    this.head++;
+    return item;
+    } else {
+    return -1; }
   }
   
 }
